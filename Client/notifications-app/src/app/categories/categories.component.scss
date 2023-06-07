@@ -1,0 +1,19 @@
+.material-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darkred;
+    }
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+  }

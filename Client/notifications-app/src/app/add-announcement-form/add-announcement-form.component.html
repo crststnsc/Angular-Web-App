@@ -1,0 +1,33 @@
+<div class="container">
+    <form class="example-form" (ngSubmit)="onSubmit()">
+        <mat-form-field class="matDesign">
+            <input matInput placeholder="Title" [(ngModel)]="title" name="title" required="">
+        </mat-form-field>
+
+        <mat-form-field class="matDesign">
+            <input matInput placeholder="Author" [(ngModel)]="author" name="author" required="">
+        </mat-form-field>
+
+        <mat-form-field class="matDesign">
+            <textarea matInput placeholder="Message" [(ngModel)]="message" name="message" required=""></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="matDesign">
+            <mat-label>Category</mat-label>
+            <mat-select [(value)]="categorySelected" required="">
+                <mat-option *ngFor="let category of listOfCategories" [value]="category.id">
+                    {{ category.name }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="matDesign">
+            <input matInput placeholder="Image" [(ngModel)]="imageUrl" name="Image">
+        </mat-form-field>
+
+        <div class="button-container">
+            <button class="material-button" type="submit" (click)="onSubmit">Submit</button>
+            <button class="material-button" routerLink="/">Cancel</button>
+        </div>
+    </form>
+</div>

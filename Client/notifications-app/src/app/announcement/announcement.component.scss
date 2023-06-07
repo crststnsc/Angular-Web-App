@@ -1,0 +1,41 @@
+.announcement-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 900px;
+  border: 2px solid #fa0f0f;
+  border-radius: 25px;
+  padding: 30px;
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .author {
+    align-self: flex-start;
+    font-weight: 600;
+  }
+
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .material-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darkred;
+    }
+  }
+}
